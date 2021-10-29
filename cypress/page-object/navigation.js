@@ -1,12 +1,9 @@
 /// <reference types="cypress" />
 
 
-class Navigation {
+export class Navigation {
     navigate() {
-        return cy.visit('/');
+        return cy.visit('/start');
      } 
-    navUrl() {
-      return cy.url()
-    }   
 }
-export default Navigation
+export const navigation = new Navigation();

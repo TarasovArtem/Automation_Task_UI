@@ -1,8 +1,9 @@
 {
-    "baseUrl": "https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start",
+    "baseUrl": "https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs",
     "viewportWidth": 1280,
     "viewportHeight": 720,
     "defaultCommandTimeout": 10000,
+    "failOnStatusCode: false": false,
 
     "ignoreTestFiles": [
         "**/__snapshots__/*",
