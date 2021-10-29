@@ -2,14 +2,14 @@
 
 import Navigation from '../page-object/navigation';
 
-describe('', () => {
+describe('Automation Task - UI', () => {
     const navigation = new Navigation();
-
+   
     beforeEach(() => {
-        navigation.navigate();
+        navigation.navigate();       
     })
 
-    it('', () => {
+    it('Should shows the automation test of UI', () => {
 
     })
 })
