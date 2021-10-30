@@ -31,10 +31,9 @@ export class Automation {
         cy.get('#next-button').click();
     }
 
-    errorMessage() {
-        cy.get('h2#error-summary-heading').should('have.text', '\n\t\t\t\t\t\tThere is a problem\n        \t')
+    errorMessage(Text) {
+        cy.get('h2#error-summary-heading').should('have.text', Text)
         cy.get('.error-message a').should('have.attr', 'href');
-        cy.contains('Enter your date of birth').click();
     }
 
     dateOfbirth(Day, Month, Year) {
@@ -43,7 +42,20 @@ export class Automation {
         cy.get('#dob-year').type(Year);
     }
 
+    infoSummary(Text) {
+        cy.contains('Why we ask for your date of birth').click();
+        cy.get('#details-content-0 p').should('have.text', Text);
+    }
 
+    yesCheckbox() {
+        cy.get('#label-yes').click().should('have.class', 'selected');
+    }
+
+    noCheckbox() {
+        cy.get('#label-no').click().should('have.class', 'selected');
+    }
+
+   
 
 }
 export const automation = new Automation();
