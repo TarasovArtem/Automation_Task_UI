@@ -3,9 +3,9 @@
   "description": "Automation Task - UI",
   "scripts": {
     "cypress": "cypress open",
-    "chrome": "cypress run --spec 'cypress/integration/**/*' --headless --browser chrome",
-    "firefox": "cypress run --spec 'cypress/integration/**/*' --headless --browser firefox",
-    "edge": "cypress run --spec 'cypress/integration/**/*' --headless --browser edge"
+    "chrome": "cypress run --spec 'cypress/integration/*' --headless --browser chrome",
+    "firefox": "cypress run --spec 'cypress/integration/*' --headless --browser firefox",
+    "edge": "cypress run --spec 'cypress/integration/*' --headless --browser edge"
   },
   "devDependencies": {
     "cypress": "^8.7.0"
